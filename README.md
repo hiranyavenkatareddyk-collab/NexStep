@@ -1,173 +1,137 @@
-# NexStep# NexStep
+# NexStep
 
-## Overview
+### AI-Powered Exam Eligibility and Tracking Platform
 
-NexStep is an AI-powered Exam Eligibility and Tracking Platform designed to help students discover examinations they are eligible for, monitor official notifications, and receive personalized updates.
+NexStep helps students discover examinations they are eligible for, track important deadlines, and receive updates from official examination sources.
 
-Instead of requiring students to manually visit multiple official websites and interpret complex eligibility criteria, NexStep automates the process by collecting official notifications, extracting relevant information, verifying changes through an approval workflow, and evaluating each student's eligibility based on their academic profile.
+It combines **AI, automation, and rule-based eligibility evaluation** to provide personalized examination information in one place.
 
-The project combines automation, artificial intelligence, and rule-based decision making to provide accurate and personalized exam recommendations.
+---
 
-
-
-## Problem Statement
-
-Students often miss valuable career opportunities because:
-
-- Exam information is scattered across multiple official websites.
-- Eligibility criteria are difficult to interpret.
-- Official notifications are lengthy and frequently updated.
-- Students are unaware of newly announced examinations.
-- Important deadlines are missed.
-- There is no centralized platform that tells students exactly which exams they are eligible for.
-
-NexStep addresses these challenges by providing a unified platform that continuously tracks official notifications and evaluates eligibility automatically.
-
-
-## Objectives
-
-- Centralize examination information from official sources.
-- Determine student eligibility automatically.
-- Track changes in official notifications.
-- Notify students about relevant updates and deadlines.
-- Reduce manual effort required to search and verify exam information.
-- Provide an intelligent assistant for exam-related queries.
-
-
-## Key Features
+## Features
 
 ### Student
 
-- Account Registration and Authentication
-- Profile Management
-- Educational Profile Management
-- Personalized Eligible Exams
-- Non-Eligible Exams with Reasons
-- Exam Tracking
-- Deadline Reminders
-- In-App Notifications
-- Email Notifications
-- AI Chat Assistant
+* Registration & Login
+* Student Profile
+* Automatic Exam Eligibility Checking
+* Eligible / Non-Eligible Exams
+* Exam Tracking
+* Deadline Reminders
+* In-App & Email Notifications
+* AI Chat Assistant
 
-### Administration
+### Admin
 
-- Review AI-extracted information
-- Approve or reject notification updates
-- Manage examinations
-- Monitor system activity through audit logs
+* Manage Examinations
+* Manage Eligibility Rules
+* Review AI-extracted information
+* Approve / Reject updates
+* Audit Logs
 
-### Automation
+### Automation & AI
 
-- Periodically monitors official examination websites
-- Detects newly published notifications
-- Downloads official notification documents
-- Identifies changes between notification versions
+* Monitor official examination websites
+* Detect new and updated notifications
+* Extract information from official notifications
+* Compare notification versions
+* Summarize important updates
+* Trigger eligibility re-evaluation and notifications
 
-### Artificial Intelligence
-
-- Extracts structured information from official notifications
-- Generates concise summaries
-- Highlights differences between notification versions
-- Assists administrators during verification
-
-
-
-
-
-## Architecture
-
-The project follows a modular architecture consisting of:
-
-- Frontend
-- Backend API
-- PostgreSQL Database
-- Automation Service
-- AI Verification Engine
-- Eligibility Engine
-- Notification Service
+---
 
 ## Technology Stack
 
-### Backend
+* **Frontend:** React, JavaScript, HTML, CSS
+* **Backend:** Python, FastAPI
+* **Database:** PostgreSQL
+* **ORM:** SQLAlchemy
+* **AI:** Large Language Models
+* **Automation:** Selenium, BeautifulSoup
+* **Authentication:** JWT
+* **Tools:** Git, GitHub, VS Code
 
-- Python
-- FastAPI
-- SQLAlchemy
-- PostgreSQL
+---
 
-### Frontend
+## Project Structure
 
-- React
-- HTML
-- CSS
-- JavaScript
+```text
+NexStep/
+│
+├── backend/
+│   ├── app/
+│   │   ├── models/
+│   │   ├── schemas/
+│   │   ├── routers/
+│   │   ├── services/
+│   │   ├── database/
+│   │   ├── auth/
+│   │   ├── eligibility/
+│   │   ├── notifications/
+│   │   ├── automation/
+│   │   └── ai/
+│   │
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.jsx
+│   │
+├── database/
+│   ├── schema/
+│   └── migrations/
+│
+├── docs/
+│   ├── SRS/
+│   ├── SADD/
+│   └── diagrams/
+│
+├── tests/
+│
+├── .gitignore
+└── README.md
+```
 
-### Artificial Intelligence
+---
 
-- Large Language Models
-- Prompt Engineering
+## Development Status
 
-### Automation
+**Current Phase:** Architecture & Development
 
-- Selenium
-- BeautifulSoup
+### Completed
 
-### Authentication
+* Requirements Analysis
+* SRS
+* SADD
+* System Architecture
+* ER Diagram
+* Database Design
+* Initial PostgreSQL Tables & Relationships
 
-- JWT Authentication
-- Password Hashing
+### Next
 
-### Development Tools
+* Backend Development
+* Authentication
+* Eligibility Engine
+* Frontend Development
+* Automation
+* AI Integration
+* Notifications
+* Testing & Deployment
 
-- Git
-- GitHub
-- VS Code
+---
 
-## Development Roadmap
+## Goal
 
-- System Analysis
-- Database Design
-- Backend Development
-- Frontend Development
-- AI Integration
-- Automation Module
-- Eligibility Engine
-- Notification System
-- Testing
-- Deployment
+NexStep aims to transform examination discovery from a **manual search process** into a **personalized and automated service**.
 
+> **Instead of searching multiple websites to find opportunities, students can find the examinations they are eligible for in one place.**
 
-
-## Current Status
-
-Project Phase: Architecture and Planning
-
-Completed
-
-- Problem Analysis
-- Requirement Analysis
-- System Architecture
-- Database Design
-- ER Diagram
-- Workflow Design
-
-Upcoming
-
-- Backend Development
-- Frontend Development
-- AI Integration
-- Automation Development
-- Deployment
-
-## Future Enhancements
-
-- Mobile Application
-- OCR Support for Scanned PDFs
-- Multi-language Support
-- Advanced Recommendation System
-- Analytics Dashboard
-- Multi-Administrator Support
+---
 
 ## License
 
-This project is being developed for educational and research purposes.
+This project is developed for educational and research purposes.
