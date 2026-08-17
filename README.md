@@ -60,6 +60,8 @@ NexStep/
 │
 ├── backend/
 │   ├── app/
+│   │   ├── main.py
+│   │
 │   │   ├── models/
 │   │   ├── schemas/
 │   │   ├── routers/
@@ -80,6 +82,8 @@ NexStep/
 │   │   ├── services/
 │   │   └── App.jsx
 │   │
+│   └── package.json
+│
 ├── database/
 │   ├── schema/
 │   └── migrations/
@@ -90,12 +94,12 @@ NexStep/
 │   └── diagrams/
 │
 ├── tests/
+│   ├── backend/
+│   ├── frontend/
+│   └── integration/
 │
 ├── .gitignore
 └── README.md
-```
-
----
 
 ## Development Status
 
